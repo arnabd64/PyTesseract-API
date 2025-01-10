@@ -1,0 +1,14 @@
+networks:
+  docker-net:
+    driver: bridge
+
+services:
+  tesseract:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - docker-net
+    ports:
+      - 8000:8000
+    restart: unless-stopped
