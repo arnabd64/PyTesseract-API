@@ -1,0 +1,6 @@
+.devcontainer/
+.ruff_cache/
+.venv/
+__pycache__/
+.git/
+.gitignore
